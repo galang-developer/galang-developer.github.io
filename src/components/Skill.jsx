@@ -14,22 +14,47 @@ const skillItem = [
     {
         imgSrc: './images/figma.svg',
         label: 'Figma',
-        desc: 'UI/UX Design'
+        desc: 'Design Tool'
     },
     {
         imgSrc: './images/css3.svg',
         label: 'CSS',
-        desc: 'Styling'
+        desc: 'User Interface'
+    },
+    {
+        imgSrc: '/images/tailwindcss.svg',
+        label: 'TailwindCSS',
+        desc: 'User Interface'
     },
     {
         imgSrc: './images/javascript.svg',
         label: 'JavaScript',
-        desc: 'Frontend Logic'
+        desc: 'Web Logic'
+    },
+    {
+        imgSrc: './images/typescript.svg',
+        label: 'TypeScript',
+        desc: 'Scalable JS'
+    },
+    {
+        imgSrc: './images/react.svg',
+        label: 'React',
+        desc: 'Framework'
+    },
+    {
+        imgSrc: './images/nextjs.svg',
+        label: 'NextJS',
+        desc: 'React Framework'
     },
     {
         imgSrc: './images/nodejs.svg',
-        label: 'Node.js',
-        desc: 'JavaScript Runtime'
+        label: 'NodeJS',
+        desc: 'Web Server'
+    },
+    {
+        imgSrc: '/images/expressjs.svg',
+        label: 'ExpressJS',
+        desc: 'Node Framework'
     },
     
     // PHP Ecosystem
@@ -72,6 +97,11 @@ const skillItem = [
         label: 'MySQL',
         desc: 'Relational Database'
     },
+    {
+        imgSrc: './images/firebase.svg',
+        label: 'Firebase',
+        desc: 'NoSQL Database'
+    },
     
     // Mobile Development
     {
@@ -82,12 +112,12 @@ const skillItem = [
     {
         imgSrc: './images/kotlin.svg',
         label: 'Kotlin',
-        desc: 'Modern Android'
+        desc: 'Android Language'
     },
     {
         imgSrc: './images/java.svg',
         label: 'Java',
-        desc: 'Android Development'
+        desc: 'Android Language'
     }
 ];
 
@@ -104,7 +134,7 @@ const Skill = () => {
                     Saya menggunakan framework dan bahasa pemrograman terbaru untuk membangun aplikasi mobile (Android/iOS) dan website yang responsif, aman, dan mudah dikembangkan.
                 </p>
 
-                <div className="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                {/* <div className="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {
                         skillItem.map((item, index) => (
                             <div 
@@ -117,6 +147,13 @@ const Skill = () => {
                             >
                                 <SkillCard {...item} classes="cursor-scale reveal-up" />
                             </div>
+                        ))
+                    }
+                </div> */}
+                <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+                    {
+                        skillItem.map(({ imgSrc, label, desc }, key) => (
+                            <SkillCard key={key} imgSrc={imgSrc} label={label} desc={desc} classes="cursor-scale reveal-up" />
                         ))
                     }
                 </div>
