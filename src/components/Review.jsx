@@ -26,37 +26,37 @@ import ReviewCard from "./ReviewCard";
 
 const reviews = [
     {
-        content: 'Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.',
+        content: 'Pengembangan web yang luar biasa! Menghasilkan situs yang responsif, kode bersih, dan pengalaman pengguna yang hebat.',
         name: 'Sophia Ramirez',
         imgSrc: './images/people-1.jpg',
         company: 'PixelForge'
     },
     {
-        content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
+        content: 'Pekerjaan yang mengesankan! Waktu loading cepat, desain intuitif, dan integrasi backend yang sempurna. Sangat direkomendasikan.',
         name: 'Ethan Caldwell',
         imgSrc: './images/people-2.jpg',
         company: 'NexaWave'
     },
     {
-        content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
+        content: 'Developer yang istimewa! Membangun situs yang kuat dengan fungsionalitas sempurna. Efisien dan detail-oriented.',
         name: 'Liam Bennett',
         imgSrc: './images/people-3.jpg',
         company: 'CodeCraft'
     },
     {
-        content: 'Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.',
+        content: 'Kreatif dan terampil! Menghasilkan situs modern yang ramah pengguna melebihi ekspektasi. Komunikasi yang baik.',
         name: 'Noah Williams',
         imgSrc: './images/people-4.jpg',
         company: 'BrightWeb'
     },
     {
-        content: 'Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.',
+        content: 'Pekerjaan profesional! Tepat waktu, dengan desain elegan dan pengalaman pengguna yang lancar. Developer kelas atas.',
         name: 'Ava Thompson',
         imgSrc: './images/people-5.jpg',
         company: 'TechMosaic'
     },
     {
-        content: 'Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.',
+        content: 'Eksekusi proyek yang sempurna! Kode berkualitas tinggi, desain responsif, dan kemampuan pemecahan masalah yang luar biasa.',
         name: 'Jonathan',
         imgSrc: './images/people-6.jpg',
         company: 'Skyline Digital'
