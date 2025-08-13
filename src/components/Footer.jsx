@@ -36,7 +36,7 @@ const sitemap = [
 const socials = [
     {
         label: 'GitHub',
-        href: 'https://www.github.com/xtwodev'
+        href: 'https://www.github.com/galang-developer'
     },  
     {
         label: 'LinkedIn',

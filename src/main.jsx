@@ -37,15 +37,29 @@ createRoot(document.getElementById('root')).render(
 const cursorDot = document.querySelector("[data-cursor-dot]");
 const cursorBg = document.querySelector("[data-cursor-bg]");
 
-window.addEventListener("mousemove", function (e) {
-    const posX = e.clientX;
-    const posY = e.clientY;
-
+function updateCursorPosition(posX, posY) {
     cursorDot.style.left = `${posX}px`;
     cursorDot.style.top = `${posY}px`;
-
+    
     cursorBg.animate({
         left: `${posX}px`,
         top: `${posY}px`
     }, { duration: 500, fill: "forwards" });
-});
+}
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+if (cursorDot && cursorBg) {
+    updateCursorPosition(mouseX, mouseY);
+    
+    window.addEventListener("mousemove", function (e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        updateCursorPosition(mouseX, mouseY);
+    });
+    
+    window.addEventListener('load', function() {
+        updateCursorPosition(mouseX, mouseY);
+    });
+}
