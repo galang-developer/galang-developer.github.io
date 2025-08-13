@@ -1,0 +1,30 @@
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    transition: 
+        transform 0.1s ease,
+        opacity 0.3s ease;
+}
+
+.cursor-bg {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    transition: 
+        width 0.3s ease, 
+        height 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.cursor-dot,
+.cursor-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
