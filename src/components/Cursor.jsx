@@ -19,13 +19,23 @@ const Cursor = () => {
             return (
                 'ontouchstart' in window ||
                 navigator.maxTouchPoints > 0 ||
-                navigator.msMaxTouchPoints > 0
+                navigator.msMaxTouchPoints > 0 ||
+                window.matchMedia('(pointer: coarse)').matches
             );
         };
 
-        if (checkTouchDevice()) {
-            setIsTouchDevice(true);
-            return;
+        const updateTouchDevice = () => {
+            setIsTouchDevice(checkTouchDevice());
+        };
+
+        updateTouchDevice();
+
+        window.addEventListener('resize', updateTouchDevice);
+
+        if (isTouchDevice) {
+            return () => {
+                window.removeEventListener('resize', updateTouchDevice);
+            };
         }
 
         const updateCursor = (x, y) => {
@@ -36,8 +46,8 @@ const Cursor = () => {
             }
             if (bgRef.current) {
                 bgRef.current.animate(
-                { left: `${x}px`, top: `${y}px` },
-                { duration: 500, fill: 'forwards' }
+                    { left: `${x}px`, top: `${y}px` },
+                    { duration: 500, fill: 'forwards' }
                 );
             }
         };
@@ -55,34 +65,34 @@ const Cursor = () => {
         window.addEventListener('mousemove', handleMouseMove);
 
         const handleMouseEnter = (e) => {
-        const target = e.target;
-        
-        if (target.classList.contains('cursor-hide')) {
-            if (dotRef.current) dotRef.current.style.opacity = '0';
-            if (bgRef.current) bgRef.current.style.opacity = '0';
-        } 
-        else if (
-            target.tagName === 'BUTTON' || 
-            target.tagName === 'A' || 
-            target.classList.contains('cursor-scale')
-        ) {
-            if (bgRef.current) {
-                bgRef.current.style.width = '60px';
-                bgRef.current.style.height = '60px';
+            const target = e.target;
+            
+            if (target.classList.contains('cursor-hide')) {
+                if (dotRef.current) dotRef.current.style.opacity = '0';
+                if (bgRef.current) bgRef.current.style.opacity = '0';
+            } 
+            else if (
+                target.tagName === 'BUTTON' || 
+                target.tagName === 'A' || 
+                target.classList.contains('cursor-scale')
+            ) {
+                if (bgRef.current) {
+                    bgRef.current.style.width = '60px';
+                    bgRef.current.style.height = '60px';
+                }
+                if (dotRef.current) {
+                    dotRef.current.style.opacity = '0';
+                }
             }
-            if (dotRef.current) {
-                dotRef.current.style.opacity = '0';
-            }
-        }
         };
 
         const handleMouseLeave = () => {
-        if (dotRef.current) dotRef.current.style.opacity = '1';
-        if (bgRef.current) {
-            bgRef.current.style.opacity = '1';
-            bgRef.current.style.width = '30px';
-            bgRef.current.style.height = '30px';
-        }
+            if (dotRef.current) dotRef.current.style.opacity = '1';
+            if (bgRef.current) {
+                bgRef.current.style.opacity = '1';
+                bgRef.current.style.width = '30px';
+                bgRef.current.style.height = '30px';
+            }
         };
 
         const elements = document.querySelectorAll('.cursor-scale, .cursor-hide');
@@ -92,13 +102,15 @@ const Cursor = () => {
         });
 
         return () => {
+            window.removeEventListener('resize', updateTouchDevice);
             window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('mousemove', initialMove);
             elements.forEach(el => {
                 el.removeEventListener('mouseenter', handleMouseEnter);
                 el.removeEventListener('mouseleave', handleMouseLeave);
             });
         };
-    }, []);
+    }, [isTouchDevice]);
 
     if (isTouchDevice) {
         return null;
