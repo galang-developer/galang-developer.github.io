@@ -13,14 +13,14 @@ import ProjectCard from "./ProjectCard";
 const works = [
     {
         imgSrc: './images/project-1.jpg',
-        title: 'Full stack music app',
-        tags: ['API', 'MVC', 'Development'],
+        title: 'Sistem Presensi Digital',
+        tags: ['Filament', 'Presensi Online', 'Admin Panel'],
         projectLink: '#'
     },
     {
         imgSrc: './images/project-2.jpg',
-        title: 'Free stock photo app',
-        tags: ['API', 'SPA'],
+        title: 'FastFeast',
+        tags: ['Kotlin', 'Pengiriman Makanan', 'Mobile'],
         projectLink: '#'
     },
     {
