@@ -4,6 +4,9 @@
  */
 
 
+/**
+ * Components
+ */
 import { useEffect, useRef, useState } from 'react';
 import './Cursor.css';
 
@@ -13,6 +16,7 @@ const Cursor = () => {
     const bgRef = useRef(null);
     const pos = useRef({ x: window.innerWidth/2, y: window.innerHeight/2 });
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         const checkTouchDevice = () => {
@@ -29,7 +33,6 @@ const Cursor = () => {
         };
 
         updateTouchDevice();
-
         window.addEventListener('resize', updateTouchDevice);
 
         if (isTouchDevice) {
@@ -37,6 +40,10 @@ const Cursor = () => {
                 window.removeEventListener('resize', updateTouchDevice);
             };
         }
+
+        // Set opacity to 0 initially
+        if (dotRef.current) dotRef.current.style.opacity = '0';
+        if (bgRef.current) bgRef.current.style.opacity = '0';
 
         const updateCursor = (x, y) => {
             pos.current = { x, y };
@@ -53,10 +60,18 @@ const Cursor = () => {
         };
 
         const handleMouseMove = (e) => {
+            if (!isActive) {
+                setIsActive(true);
+                if (dotRef.current) dotRef.current.style.opacity = '1';
+                if (bgRef.current) bgRef.current.style.opacity = '1';
+            }
             updateCursor(e.clientX, e.clientY);
         };
 
         const initialMove = (e) => {
+            setIsActive(true);
+            if (dotRef.current) dotRef.current.style.opacity = '1';
+            if (bgRef.current) bgRef.current.style.opacity = '1';
             updateCursor(e.clientX, e.clientY);
             window.removeEventListener('mousemove', initialMove);
         };
@@ -87,9 +102,9 @@ const Cursor = () => {
         };
 
         const handleMouseLeave = () => {
-            if (dotRef.current) dotRef.current.style.opacity = '1';
+            if (dotRef.current) dotRef.current.style.opacity = isActive ? '1' : '0';
             if (bgRef.current) {
-                bgRef.current.style.opacity = '1';
+                bgRef.current.style.opacity = isActive ? '1' : '0';
                 bgRef.current.style.width = '30px';
                 bgRef.current.style.height = '30px';
             }
@@ -110,7 +125,7 @@ const Cursor = () => {
                 el.removeEventListener('mouseleave', handleMouseLeave);
             });
         };
-    }, [isTouchDevice]);
+    }, [isTouchDevice, isActive]);
 
     if (isTouchDevice) {
         return null;
@@ -118,8 +133,8 @@ const Cursor = () => {
 
     return (
         <>
-            <div className="cursor-dot" ref={dotRef} style={{ left: `${pos.current.x}px`, top: `${pos.current.y}px` }} />
-            <div className="cursor-bg" ref={bgRef} style={{ left: `${pos.current.x}px`, top: `${pos.current.y}px` }} />
+            <div className="cursor-dot" ref={dotRef} style={{ left: `${pos.current.x}px`, top: `${pos.current.y}px`, opacity: isActive ? 1 : 0 }} />
+            <div className="cursor-bg" ref={bgRef} style={{ left: `${pos.current.x}px`, top: `${pos.current.y}px`, opacity: isActive ? 1 : 0 }} />
         </>
     );
 };
