@@ -25,8 +25,8 @@ const works = [
     },
     {
         imgSrc: './images/project-3.jpg',
-        title: 'Recipe app',
-        tags: ['Development', 'API'],
+        title: 'ResuLytix',
+        tags: ['React', 'AI-Powered', 'Resume Feedback'],
         projectLink: '#'
     },
     {
