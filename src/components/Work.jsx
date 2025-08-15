@@ -26,7 +26,7 @@ const works = [
     {
         imgSrc: './images/project-3.jpg',
         title: 'ResuLytix',
-        tags: ['React', 'AI-Powered', 'Resume Feedback'],
+        tags: ['React', 'Resume Feedback', 'AI-Powered'],
         projectLink: '#'
     },
     {
