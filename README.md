@@ -1,5 +1,3 @@
-Here's your refined README.md with improved visual demo section and other optimizations:
-
 # Galang Developer - Portofolio Profesional
 
 ![Repo Size](https://img.shields.io/github/repo-size/galang-developer/galang-developer.github.io)
@@ -13,10 +11,9 @@ Here's your refined README.md with improved visual demo section and other optimi
 
 ## 🖥️ Demo Portofolio
 
-![Desktop Demo](./website-demo-image/desktop.png "Tampilan Desktop")
-![Mobile Demo](./website-demo-image/mobile.png "Tampilan Mobile")
+![Portfolio Desktop Demo](./website-demo-image//desktop.png "Desktop Demo")
 
-**Live Demo:** [galang-developer.github.io](https://galang-developer.github.io/)
+<a href="https://galang-developer.github.io/"><strong>➥ Live Demo</strong></a>
 
 ## ✨ Fitur Utama
 
