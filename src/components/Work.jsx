@@ -31,9 +31,9 @@ const works = [
     },
     {
         imgSrc: './images/project-4.jpg',
-        title: 'Real state website',
-        tags: ['Web-design', 'Development'],
-        projectLink: '#'
+        title: 'Compressify',
+        tags: ['NextJS', 'Video Compression', 'Development'],
+        projectLink: 'https://compressify-video.vercel.app/'
     },
     {
         imgSrc: './images/project-5.jpg',
