@@ -44,7 +44,7 @@ npm run dev
 
 ## 📜 Lisensi
 
-[MIT License](LICENSE) © 2023 Galang Developer
+[Apache License](LICENSE) © 2025 Galang Dev
 
 Dibangun dengan:  
 ⚛️ React | ⚡ Vite | 🎨 Tailwind CSS | ✨ GSAP
