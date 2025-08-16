@@ -24,6 +24,7 @@
 
 ## 🚀 Instalasi Cepat
 
+Linux and macOS:
 ```bash
 git clone https://github.com/galang-developer/galang-developer.github.io.git
 cd galang-developer.github.io
@@ -31,13 +32,14 @@ npm install
 npm run dev
 ```
 
-## 🤝 Kontribusi
+Windows:
 
-1. Fork repository
-2. Buat branch fitur (`git checkout -b fitur-anda`)
-3. Commit perubahan (`git commit -m 'Tambahkan fitur'`)
-4. Push ke branch (`git push origin fitur-anda`)
-5. Buat Pull Request
+```bash
+git clone https://github.com/galang-developer/galang-developer.github.io.git
+cd galang-developer.github.io
+npm install
+npm run dev
+```
 
 ## 📜 Lisensi
 
