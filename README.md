@@ -99,6 +99,6 @@ Kunjungi portofolio online:
 
 ## 📜 Lisensi
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+Proyek ini dilisensikan di bawah [Apache License](LICENSE).
 
 Dibangun dengan ❤️ menggunakan React + Vite + Tailwind CSS
