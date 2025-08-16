@@ -3,7 +3,7 @@
 ![Ukuran Repo GitHub](https://img.shields.io/github/repo-size/galang-developer/galang-developer.github.io)
 ![GitHub Stars](https://img.shields.io/github/stars/galang-developer/galang-developer.github.io?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/galang-developer/galang-developer.github.io?style=social)
-[![Instagram Follow](https://img.shields.io/badge/Instagram-Follow-E4405F?style=social&logo=instagram)](https://www.instagram.com/saii.satoru/)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow_@sai.satoruu-E4405F?style=social&logo=instagram)](https://www.instagram.com/sai.satoruu/)
 
 Portofolio profesional modern dengan animasi GSAP dan smooth scrolling Lenis, dibangun menggunakan:
 
