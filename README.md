@@ -26,7 +26,7 @@
 
 Linux and macOS:
 ```bash
-git clone https://github.com/galang-developer/galang-developer.github.io.git
+sudo git clone https://github.com/galang-developer/galang-developer.github.io.git
 cd galang-developer.github.io
 npm install
 npm run dev
