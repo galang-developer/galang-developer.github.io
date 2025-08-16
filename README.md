@@ -6,7 +6,7 @@
 [![Instagram](https://img.shields.io/badge/Instagram-Follow_@sai.satoruu-E4405F?style=social&logo=instagram)](https://www.instagram.com/sai.satoruu/)
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,git,github,figma" alt="Tech Stack" width="500">
+  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,github,figma" alt="Tech Stack" width="500">
 </p>
 
 ## 🖥️ Demo Portofolio
