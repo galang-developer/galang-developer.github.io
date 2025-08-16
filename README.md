@@ -1,104 +1,57 @@
+Here's your refined README.md with improved visual demo section and other optimizations:
+
 # Galang Developer - Portofolio Profesional
 
-![Ukuran Repo GitHub](https://img.shields.io/github/repo-size/galang-developer/galang-developer.github.io)
+![Repo Size](https://img.shields.io/github/repo-size/galang-developer/galang-developer.github.io)
 ![GitHub Stars](https://img.shields.io/github/stars/galang-developer/galang-developer.github.io?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/galang-developer/galang-developer.github.io?style=social)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow_@sai.satoruu-E4405F?style=social&logo=instagram)](https://www.instagram.com/sai.satoruu/)
-
-Portofolio profesional modern dengan animasi GSAP dan smooth scrolling Lenis, dibangun menggunakan:
+[![Instagram Follow](https://img.shields.io/badge/Instagram-@sai.satoruu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sai.satoruu/)
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,git,github" alt="Tech Stack">
+  <img src="https://skillicons.dev/icons?i=react,vite,tailwind,git,github,figma" alt="Tech Stack" width="500">
 </p>
 
-## 🔥 Fitur Unggulan
+## 🖥️ Demo Portofolio
 
-- 🚀 Performa optimal dengan Vite + React 19
-- ✨ Animasi fluid menggunakan GSAP + React GSAP
-- 📜 Smooth scrolling dengan Lenis
-- 📱 Desain responsif mobile-first
-- ⚡ Optimasi SEO & performa
+![Desktop Demo](./website-demo-image/desktop.png "Tampilan Desktop")
+![Mobile Demo](./website-demo-image/mobile.png "Tampilan Mobile")
 
-## 🚀 Demo Langsung
+**Live Demo:** [galang-developer.github.io](https://galang-developer.github.io/)
 
-Kunjungi portofolio online:  
-[https://galang-developer.github.io/](https://galang-developer.github.io/)
+## ✨ Fitur Utama
 
-## 🛠 Teknologi Utama
+- 🚀 **Performa Tinggi** - Vite + React 19
+- 🎥 **Animasi GSAP** - Transisi profesional
+- 📱 **Responsif Penuh** - Mobile-first design
+- 🌗 **Mode Gelap** - Dukungan tema otomatis
+- ⚡ **Optimasi SEO** - Peringkat pencarian lebih baik
 
-| Teknologi       | Versi    | Kegunaan                     |
-|-----------------|----------|------------------------------|
-| React           | ^19.1.1  | Library UI modern            |
-| Vite            | ^7.1.0   | Build tool ultra cepat       |
-| Tailwind CSS    | ^3.4.17  | Utility-first CSS framework  |
-| GSAP            | ^3.13.0  | Animasi profesional          |
-| Lenis           | ^1.3.8   | Smooth scrolling            |
-| gh-pages        | ^6.3.0   | Deployment ke GitHub Pages   |
+## 🚀 Instalasi Cepat
 
-## 📥 Instalasi Lokal
-
-1. **Clone repository**:
-   ```bash
-   git clone https://github.com/galang-developer/galang-developer.github.io.git
-   cd galang-developer.github.io
-   ```
-
-2. **Instal dependensi**:
-   ```bash
-   npm install
-   # atau
-   yarn install
-   ```
-
-3. **Jalankan mode development**:
-   ```bash
-   npm run dev
-   # atau
-   yarn dev
-   ```
-
-## 🏗️ Build & Deployment
-
-- **Build produksi**:
-  ```bash
-  npm run build
-  ```
-
-- **Deploy ke GitHub Pages**:
-  ```bash
-  npm run deploy
-  ```
-
-## 🧩 Struktur Proyek
-
-```
-├── public/            # Assets statis
-├── src/
-│   ├── components/    # Komponen reusable
-│   ├── styles/        # Global styles
-│   ├── index.css      # Global styles
-│   ├── App.jsx        # Root component
-│   └── main.jsx       # Entry point
-├── eslint.config.js   # ESLint config
-├── tailwind.config.js # Tailwind config
-└── vite.config.js     # Vite config
+```bash
+git clone https://github.com/galang-developer/galang-developer.github.io.git
+cd galang-developer.github.io
+npm install
+npm run dev
 ```
 
-## 🤝 Berkontribusi
+## 🤝 Kontribusi
 
-1. Fork project ini
-2. Buat branch baru (`git checkout -b fitur-baru`)
+1. Fork repository
+2. Buat branch fitur (`git checkout -b fitur-anda`)
 3. Commit perubahan (`git commit -m 'Tambahkan fitur'`)
-4. Push ke branch (`git push origin fitur-baru`)
+4. Push ke branch (`git push origin fitur-anda`)
 5. Buat Pull Request
 
-## 📬 Kontak
+## 📱 Hubungi Saya
 
-- GitHub: [galang-developer](https://github.com/galang-developer)
-- Portofolio: [galang-developer.github.io](https://galang-developer.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-galang--developer-181717?logo=github)](https://github.com/galang-developer)
+[![Instagram](https://img.shields.io/badge/Instagram-@sai.satoruu-E4405F?logo=instagram)](https://instagram.com/sai.satoruu)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Galang_Developer-0077B5?logo=linkedin)](https://linkedin.com/in/galang-developer)
 
 ## 📜 Lisensi
 
-Proyek ini dilisensikan di bawah [Apache License](LICENSE).
+[MIT License](LICENSE) © 2023 Galang Developer
 
-Dibangun dengan ❤️ menggunakan React + Vite + Tailwind CSS
+Dibangun dengan:  
+⚛️ React | ⚡ Vite | 🎨 Tailwind CSS | ✨ GSAP
