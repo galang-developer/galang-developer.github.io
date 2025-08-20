@@ -14,13 +14,13 @@ const works = [
     {
         imgSrc: './images/project-1.jpg',
         title: 'Sistem Presensi Digital',
-        tags: ['Filament', 'Presensi Online', 'Admin Panel'],
+        tags: ['Filament', 'Presence Online', 'Admin Panel'],
         projectLink: '#'
     },
     {
         imgSrc: './images/project-2.jpg',
         title: 'FastFeast',
-        tags: ['Kotlin', 'Pengiriman Makanan', 'Mobile'],
+        tags: ['Kotlin', 'Food Delivery', 'Mobile'],
         projectLink: '#'
     },
     {
@@ -37,9 +37,9 @@ const works = [
     },
     {
         imgSrc: './images/project-5.jpg',
-        title: 'eCommerce website',
-        tags: ['eCommerce', 'Development'],
-        projectLink: '#'
+        title: 'VexaAI',
+        tags: ['React', 'Conversation', 'AI-Powered'],
+        projectLink: 'https://vexaai.vercel.app/'
     },
     {
         imgSrc: './images/project-6.jpg',
