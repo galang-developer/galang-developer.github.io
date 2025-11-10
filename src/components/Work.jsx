@@ -41,12 +41,12 @@ const works = [
         tags: ['React', 'Conversation', 'AI-Powered'],
         projectLink: 'https://vexaai.vercel.app/'
     },
-    {
-        imgSrc: './images/project-6.jpg',
-        title: 'vCard Personal portfolio',
-        tags: ['Web-design', 'Development'],
-        projectLink: '#'
-    },
+    // {
+    //     imgSrc: './images/project-6.jpg',
+    //     title: 'vCard Personal portfolio',
+    //     tags: ['Web-design', 'Development'],
+    //     projectLink: '#'
+    // },
 ];
 
 
