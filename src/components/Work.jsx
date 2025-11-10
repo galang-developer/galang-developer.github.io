@@ -15,7 +15,7 @@ const works = [
         imgSrc: './images/project-1.jpg',
         title: 'Sistem Presensi Digital',
         tags: ['Filament', 'Presence Online', 'Admin Panel'],
-        projectLink: '#'
+        projectLink: 'https://smart-m-one.smk1bws.sch.id/'
     },
     {
         imgSrc: './images/project-2.jpg',
